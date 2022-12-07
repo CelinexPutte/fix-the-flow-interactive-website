@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/main.js" defer></script>
+
+    <title>Reserveren</title>
+</head>
+<body>
+    <header>
+        <a href="/" aria-label="Terug naar home">
+          <img
+          class="logo-top"
+          src="assets/logo-white-extended.png"
+          alt="Logo Coding the Cerbs"/>
+        </a>
+        
+        <button class="hamburger-menu" aria-label="Navigatie">
+            <img src="/assets/user-icon.png">
+        </button>
+        
+    </header>
+    
+    <nav>
+        <ul class="menu">
+            <li class="menu-item">Menu <button class="close-menu"><img src="/assets/cross-icon.png" alt="Sluiten"></button></li>
+            <li class="menu-item">Gegevens</li>
+            <li class="menu-item">Mijn reserveringen</li>
+            <li class="menu-item">Log uit</li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Reserveren</h1>
+            <p>Hier kan je een Smart Zone reserveren.</p>
+
+            <form>
+            <fieldset>
+            <legend>Locatie</legend>
+                <label for="city">In welke stad wil je een Smart Zone?</label>
+                <select id="city">
+                    <option value="Amsterdam">Amsterdam</option>
+                    <option value="Rotterdam">Rotterdam</option>
+                    <option value="Schiedam">Schiedam</option>
+                    <option value="Utrecht">Utrecht</option>
+                </select>
+                <label for="zone">Welke Smart Zone wil je?</label>
+                <select id="zone">
+                    <option value="Amsterdam">Amsterdam</option>
+                    <option value="Rotterdam">Rotterdam</option>
+                    <option value="Schiedam">Schiedam</option>
+                    <option value="Utrecht">Utrecht</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+            <legend>Wanneer</legend>
+                <label for="date">Op welke datum wil je een Smart Zone?</label>
+                <input type="date" id="date">
+                <label for="time">Hoe laat wil je de Smart Zone?</label>
+                <input type="time" id="time">
+            </fieldset>
+
+            <fieldset>
+            <legend>Gegevens</legend>
+                <label for="car">Wat is het kenteken van de auto die je dan gebruikt?</label>
+                <input type="text" id="car">
+            </fieldset>
+            <input type="submit" value="Boek nu">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+      <img
+        class="logo-bottom"
+        src="assets/logo-white-extended.png"
+        alt=""/>
+      <p class="rights">
+        All rights reserved © 2022
+        <a class="rights-links" href="http://www.fronteer.com/" target="_blank">
+          fronteer</a>,
+        <a
+          class="rights-links"
+          href="https://www.codingthecurbs.com/copy-of-roll-out-plan?lang=nl"
+          target="_blank">
+          Privacy statement</a>
+      </p>
+    </footer>
+</body>
+</html>
