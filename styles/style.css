@@ -64,22 +64,30 @@ header {
 .logo-top {
     display: flex;
     justify-content: flex-start;
-    height: 3rem;
+    height: 4rem;
+    width: auto;
 }
 
 .hamburger-menu {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding-top: 0.1em;
+    padding-bottom: 0.1rem;
     background: none;
     border: none;
     transition: 0.4s;
+    color: var(--accent-color);
 }
 
 .hamburger-menu > img {
     width: 2.5rem;
     height: 2.5rem;
+    position: relative;
+    display: block;
 }
 
 .hamburger-menu:hover {
@@ -90,7 +98,7 @@ header {
 /* Navigatie */
 nav {
     display: none;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
 }
 
@@ -101,7 +109,7 @@ nav.visible {
 .menu {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     z-index: 1;
     padding-left: 0;
 }
@@ -110,7 +118,7 @@ nav.visible {
     display: flex;
     list-style: none;
     border: solid 1px var(--black-color);
-    width: 100vw;
+    width: 100%;
     height: 3rem;
     align-items: center;
     padding-left: 2rem;
@@ -127,7 +135,8 @@ nav.visible {
     color: var(--black-color);
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1em;
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -139,22 +148,29 @@ nav.visible {
 }
 
 .close-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     border: none;
     background: none;
     height: 2rem;
-    width: 2rem;
-    padding: 0;
+    width: fit-content;
+    padding: 0.2rem;
+    font-size: 1rem;
+    font-weight: normal;
     transition: 0.5s;
+    gap: 0.5rem;
 }
 
 .close-menu:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 .close-menu > img {
-    height: 1rem;
-    width: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 /* Main */
@@ -174,9 +190,11 @@ footer {
     display: flex;
     flex-direction: column;
     height: 8rem;
+    width: 100%;
     background-color: var(--primary-color-1);
     color: var(--white-color);
     padding: 1rem 2rem;
+    position: absolute;
     top: auto;
     bottom: 0;
 }
