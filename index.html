@@ -43,35 +43,41 @@
             <fieldset>
             <legend>Locatie</legend>
                 <label for="city">In welke stad wil je een Smart Zone?</label>
-                <select id="city">
+                <select id="city" required>
+                    <option value="" disabled selected>Kies hier de stad</option>
                     <option value="Amsterdam">Amsterdam</option>
                     <option value="Rotterdam">Rotterdam</option>
                     <option value="Schiedam">Schiedam</option>
                     <option value="Utrecht">Utrecht</option>
                 </select>
                 <label for="zone">Welke Smart Zone wil je?</label>
-                <select id="zone">
-                    <option value="Amsterdam">Amsterdam</option>
-                    <option value="Rotterdam">Rotterdam</option>
-                    <option value="Schiedam">Schiedam</option>
-                    <option value="Utrecht">Utrecht</option>
+                <select id="zone" required>
+                    <option value="" disabled selected>Kies hier de zone</option>
+                    <option value="Olivia">Overtoom 450, 1054 JX Amsterdam</option>
+                    <option value="Karel">Kinkerstraat 272, 1053 DC Amsterdam</option>
+                    <option value="Wafa">West-kruiskade 93, 3014 AN Rotterdam</option>
+                    <option value="Wicher">Witte de Withstraat 32, 3012 BP Rotterdam</option>
+                    <option value="Manon">Lange Haven 56, 3111 CH Schiedam</option>
+                    <option value="Ahmed">Lange Haven 72, 3111 CH Schiedam</option>
+                    <option value="Tijn">Twijnstraat 26, 3511 ZL Utrecht</option>
+                    <option value="Sarah">Twijnstraat 22, 3511 ZL Utrecht</option>
                 </select>
             </fieldset>
 
             <fieldset>
             <legend>Wanneer</legend>
                 <label for="date">Op welke datum wil je een Smart Zone?</label>
-                <input type="date" id="date">
+                <input type="date" id="date" required>
                 <label for="time">Hoe laat wil je de Smart Zone?</label>
-                <input type="time" id="time">
+                <input type="time" id="time" required>
             </fieldset>
 
             <fieldset>
             <legend>Gegevens</legend>
                 <label for="car">Wat is het kenteken van de auto die je dan gebruikt? (inclusief streepjes)</label>
-                <input type="text" id="car" placeholder="A-B12-C3">
+                <input type="text" id="car" placeholder="A-B12-C3" required>
             </fieldset>
-            <input type="submit" value="Boek nu">
+            <button type="submit" value="Boek nu" class="submit-button">Boek nu</button>
             </form>
         </section>
     </main>
