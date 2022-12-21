@@ -1,5 +1,3 @@
-console.log('hoi')
-
 let menu = document.querySelector('body > header > button')
 let closeButton = document.querySelector('.close-menu')
 let nav = document.querySelector('nav')
@@ -22,18 +20,17 @@ function menuToggle() {
 // }
 
 
-// Zoom voor button
-let submit = document.querySelector('.submit-button')
+var modal = document.querySelector('#modal');
+let closeModal = document.querySelector('.close-popup')
+let openModal = document.querySelector('.submit-button')
 
-submit.addEventListener('mouseover', zoomToggle)
-submit.addEventListener('mouseout', zoomToggle)
-// menu.addEventListener('mouseover', zoomToggle)
-// menu.addEventListener('mouseout', zoomToggle)
-// closeButton.addEventListener('mouseover', zoomToggle)
-// closeButton.addEventListener('mouseout', zoomToggle)
+openModal.addEventListener('click', showPopupClick)
+closeModal.addEventListener('click', closePopupClick)
 
-function zoomToggle() {
-    submit.classList.toggle('zoom-on-hover')
-    // menu.classList.toggle('zoom-on-hover')
-    // closeButton.classList.toggle('zoom-on-hover')
+function showPopupClick() {
+    modal.showModal()
+}
+
+function closePopupClick() {
+    modal.close()
 }

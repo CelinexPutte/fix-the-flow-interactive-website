@@ -68,8 +68,10 @@
             <legend>Wanneer</legend>
                 <label for="date">Op welke datum wil je een Smart Zone?</label>
                 <input type="date" id="date" required>
-                <label for="time">Hoe laat wil je de Smart Zone?</label>
-                <input type="time" id="time" required>
+                <label for="time-from">Vanaf hoe laat wil je de Smart Zone?</label>
+                <input type="time" id="time-from" required>
+                <label for="time-till">Tot hoe laat wil je de Smart Zone?</label>
+                <input type="time" id="time-till" required>
             </fieldset>
 
             <fieldset>
@@ -79,6 +81,11 @@
             </fieldset>
             <button type="submit" value="Boek nu" class="submit-button">Boek nu</button>
             </form>
+            <dialog class="modal" id="modal">
+                <button class="close-popup" aria-label="Sluit pop-up"><img src="assets/cross-icon.png" alt="">Sluiten</button>
+                <p>Uw reservering is gelukt!</p>
+                <img src="assets/check-accent.jpg" alt="" class="check-icon">
+            </dialog>
         </section>
     </main>
 
@@ -88,14 +95,9 @@
         src="assets/logo-white-extended.png"
         alt=""/>
       <p class="rights">
-        All rights reserved © 2022
-        <a class="rights-links" href="http://www.fronteer.com/" target="_blank">
-          fronteer</a>,
-        <a
-          class="rights-links"
-          href="https://www.codingthecurbs.com/copy-of-roll-out-plan?lang=nl"
-          target="_blank">
-          Privacy statement</a>
+        All rights reserved © 2022 
+        <a class="rights-links" href="http://www.fronteer.com/" target="_blank"> fronteer</a>,
+        <a class="rights-links" href="https://www.codingthecurbs.com/copy-of-roll-out-plan?lang=nl" target="_blank"> Privacy statement</a>
       </p>
     </footer>
 </body>
