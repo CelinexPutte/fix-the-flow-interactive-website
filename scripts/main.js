@@ -29,8 +29,10 @@ closeModal.addEventListener('click', closePopupClick)
 
 function showPopupClick() {
     modal.showModal()
+    modal.classList.add('show-dialog')
 }
 
 function closePopupClick() {
     modal.close()
+    modal.classList.remove('show-dialog')
 }

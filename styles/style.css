@@ -263,6 +263,11 @@ input[type=text] {
 
 /* Pop-up */
 dialog {
+    display: none;
+}
+
+.show-dialog {
+    display: block;
     height: 70vh;
     width: 70vw;
     margin-inline: auto;
