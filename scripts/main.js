@@ -22,7 +22,7 @@ function menuToggle() {
 
 var modal = document.querySelector('#modal');
 let closeModal = document.querySelector('.close-popup')
-let openModal = document.querySelector('.submit-button')
+let openModal = document.querySelector('.pop-up-test')
 
 openModal.addEventListener('click', showPopupClick)
 closeModal.addEventListener('click', closePopupClick)

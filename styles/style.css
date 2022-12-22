@@ -239,19 +239,20 @@ input[type=text] {
     cursor: text;
 }
 
-.submit-button {
+.submit-button, .pop-up-test {
     height: 2.5rem;
-    width: 5rem;
+    width: fit-content;
     justify-content: center;
     align-items: center;
     margin: 2rem 0 1rem 0;
+    border: 2px var(--black-color) solid;
     border-radius: var(--border-radius);
     background-color: var(--accent-color);
     font-weight: 600;
     transition: 0.5s;
 }
 
-.submit-button:hover {
+.submit-button:hover, .pop-up-test:hover {
     scale: 1.1;
     cursor: pointer;
 }
@@ -390,12 +391,10 @@ a.links-site:hover {
 
     dialog {
         width: 50%;
+        max-width: 30rem;
         height: 50%;
+        max-height: 30rem;
     }
-    /* .check-icon {
-        width: 12rem;
-        height: 12rem;
-    } */
     
     .logo-bottom {
         justify-self: flex-start;
